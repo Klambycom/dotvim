@@ -10,6 +10,8 @@ set splitbelow		" Split windows below the current window.
 set foldenable		" Enable code folding
 set mousehide		" Hide mouse when typing
 
+set clipboard=unnamed	" Share clipboard with OS
+
 " Source the .vimrc file after saving it
 "if has("autocmd")
 "	autocmd bufwritepost .vimrc source $MYVIMRC
@@ -137,7 +139,7 @@ if has("autocmd")
 	autocmd FileType markdown setlocal wrap linebreak nolist
 	autocmd BufNewFile,BufRead *.rss setfiletype xml
 	autocmd BufNewFile,BufRead Rakefile,Capfile,Gemfile,Termfile,Vagrantfile,config.ru setfiletype ruby
-  autocmd BufRead,BufNewFile *.erb set filetype=eruby.html " Make html.erb use html5.vim
+	autocmd BufRead,BufNewFile *.erb set filetype=eruby.html " Make html.erb use html5.vim
 endif
 
 
@@ -156,7 +158,7 @@ if has("gui_macvim")
 	set go-=T
 
   " Make fullscreen take up entire screen
-  set fuoptions=maxhorz,maxvert
+	set fuoptions=maxhorz,maxvert
 
   " Hide right-hand scrollbar
   set go-=r " Do I really want this??
