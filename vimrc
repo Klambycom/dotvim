@@ -158,6 +158,14 @@ if has("gui_macvim")
   " Make fullscreen take up entire screen
   set fuoptions=maxhorz,maxvert
 
+  " Hide right-hand scrollbar
+  set go-=r " Do I really want this??
+  set go-=R " Do I really want this??
+
+  " Hide left-hand scrollbar
+  set go-=l 
+  set go-=L 
+
 
 
 " CUI
