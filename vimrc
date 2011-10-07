@@ -1,6 +1,3 @@
-" Christian Nilsson <christian@klamby.com> 
-" Last update: 27 sep 2011 19:18
-
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
@@ -157,6 +154,9 @@ if has("gui_macvim")
 
 	" Hide MacVim toolbar by default
 	set go-=T
+
+  " Make fullscreen take up entire screen
+  set fuoptions=maxhorz,maxvert
 
 
 
