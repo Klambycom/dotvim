@@ -139,7 +139,7 @@ if has("autocmd")
 	autocmd FileType markdown setlocal wrap linebreak nolist
 	autocmd BufNewFile,BufRead *.rss setfiletype xml
 	autocmd BufNewFile,BufRead Rakefile,Capfile,Gemfile,Termfile,Vagrantfile,config.ru setfiletype ruby
-	autocmd BufRead,BufNewFile *.erb set filetype=eruby.html " Make html.erb use html5.vim
+	autocmd BufRead,BufNewFile *.erb set filetype=erb.eruby.html " Make html.erb use html5.vim
 endif
 
 
