@@ -38,3 +38,5 @@ Useful links
 ------------
 
 [Vim Casts](http://www.vimcasts.org/)
+
+[Git Submodules: Adding, Using, Removing, Updating](http://chrisjean.com/2009/04/20/git-submodules-adding-using-removing-and-updating/)
