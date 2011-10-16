@@ -218,7 +218,6 @@ let g:gundo_preview_bottom = 1
 " Helpful abbreviations
 iab lorem Lorem ipsum dolor sit amet... Jag ska fylla i mer sen
 iab llorem Lorem ipsum dolor sit amet... Lorem ipsum dolor sit amet... Jag ska fylla i mer sen
-iab author @author Christian Nilsson <christian@klamby.com>
 
 " Spelling corrects. Just for example. Add yours below.
 iab teh the
