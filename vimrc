@@ -108,6 +108,8 @@ imap <leader><tab> <C-x><C-o>
 nmap <silent> <leader>da :exec "1," . bufnr('$') . "bd"<cr>
 " Clear search
 abbrev clear /khfaleajkd<cr>
+" Switch to the directory of the current file with <leader>cd
+nmap <leader>cd :cd %:p:h<cr>:pwd<cr>
 
 " Load the current buffer in Firefox, Chrome or Safari
 abbrev ff :! open -a firefox.app %:p<cr>
