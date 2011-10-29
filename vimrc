@@ -145,6 +145,9 @@ if has("autocmd")
 	autocmd BufRead,BufNewFile *.erb set filetype=erb.eruby.html " Make html.erb use html5.vim
 endif
 
+" Run current rubyfile
+nmap <leader>r :w<cr>:!ruby %<cr>
+
 
 
 " MacVim
