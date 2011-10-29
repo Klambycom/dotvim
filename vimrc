@@ -4,12 +4,13 @@ call pathogen#helptags()
 " Global
 " ======
 set nocompatible	" Forget compatibility with Vi. Who cares.
-set autowrite		  " Write the old file out when switching between files.
+set autowrite		" Write the old file out when switching between files.
 set hidden		  	" Switch between buffers without saving
 set splitbelow		" Split windows below the current window.
 set foldenable		" Enable code folding
-set mousehide		  " Hide mouse when typing
-set autoread      " Set to auto read when a file is changed from the outside
+set mousehide		" Hide mouse when typing
+set autoread		" Set to auto read when a file is changed from the outside
+set vb t_vb=		" Disable beeping
 
 set clipboard=unnamed	" Share clipboard with OS
 
@@ -212,10 +213,10 @@ nnoremap <F5> :NERDTreeToggle<CR>
 " let NERDTreeShowHidden=1
 
 " Autopen NERDTree and focus cursor in new document
-if has("gui_macvim")
-  autocmd VimEnter * NERDTree
-  autocmd VimEnter * wincmd p
-endif
+" if has("gui_macvim")
+"   autocmd VimEnter * NERDTree
+"   autocmd VimEnter * wincmd p
+" endif
 
 " Zen Coding
 " ----------
