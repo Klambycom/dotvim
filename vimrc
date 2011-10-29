@@ -123,6 +123,10 @@ map <C-l> <C-W>l
 " Simple calculator (1+1<C-a> => 1+1=2)
 ino <C-A> <C-O>yiW<End>=<C-R>=<C-R>0<CR>
 
+" Use the arrows to switch buffer
+map <right> :bn<cr>
+map <left> :bp<cr>
+
 " Move text with ctrl + up/down
 " -----------------------------
 " Bubble signle lines
