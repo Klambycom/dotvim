@@ -4,11 +4,12 @@ call pathogen#helptags()
 " Global
 " ======
 set nocompatible	" Forget compatibility with Vi. Who cares.
-set autowrite		" Write the old file out when switching between files.
-set hidden			" Switch between buffers without saving
+set autowrite		  " Write the old file out when switching between files.
+set hidden		  	" Switch between buffers without saving
 set splitbelow		" Split windows below the current window.
 set foldenable		" Enable code folding
-set mousehide		" Hide mouse when typing
+set mousehide		  " Hide mouse when typing
+set autoread      " Set to auto read when a file is changed from the outside
 
 set clipboard=unnamed	" Share clipboard with OS
 
