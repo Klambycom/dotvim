@@ -129,6 +129,10 @@ ino <C-A> <C-O>yiW<End>=<C-R>=<C-R>0<CR>
 map <right> :bn<cr>
 map <left> :bp<cr>
 
+" Scroll page up/down with gj/gk
+nmap gj <C-f>
+nmap gk <C-b>
+
 " Move text with ctrl + up/down
 " -----------------------------
 " Bubble signle lines
