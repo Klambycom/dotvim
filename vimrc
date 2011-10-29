@@ -119,6 +119,9 @@ map <C-j> <C-W>j
 map <C-h> <C-W>h
 map <C-l> <C-W>l
 
+" Simple calculator (1+1<C-a> => 1+1=2)
+ino <C-A> <C-O>yiW<End>=<C-R>=<C-R>0<CR>
+
 " Move text with ctrl + up/down
 " -----------------------------
 " Bubble signle lines
