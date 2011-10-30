@@ -229,6 +229,12 @@ let g:user_zen_complete_tag = 1
 nnoremap <F4> :NERDTreeClose<CR>:GundoToggle<CR>
 let g:gundo_preview_bottom = 1
 
+" MiniBufExplorer
+" ---------------
+let g:miniBufExplSplitBelow=1
+let g:miniBufExplorerMoreThanOne=4
+let g:miniBufExplUseSingleClick=1
+
 
 
 " Abbreviations
