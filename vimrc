@@ -14,6 +14,9 @@ set vb t_vb=		" Disable beeping
 
 set clipboard=unnamed	" Share clipboard with OS
 
+set encoding=utf-8
+set fileencoding=utf-8
+
 " Source the .vimrc file after saving it
 "if has("autocmd")
 "	autocmd bufwritepost .vimrc source $MYVIMRC
