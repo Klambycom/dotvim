@@ -223,8 +223,7 @@ nnoremap <F5> :NERDTreeToggle<CR>
 
 " Zen Coding
 " ----------
-" Change zen coding expand key to control + e
-let g:user_zen_expandabbr_key = '<C-e>'
+let g:user_zen_expandabbr_key = '<C-e>' " Change zen coding expand key to control + e
 let g:user_zen_complete_tag = 1
 
 " Gundo
