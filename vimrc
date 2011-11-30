@@ -162,7 +162,7 @@ endif
 
 " Run current rubyfile
 nmap <leader>r :w<cr>:!ruby %<cr>
-
+abbrev irb :w<cr>:!irb -r ./%<cr>
 
 
 " MacVim
