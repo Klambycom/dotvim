@@ -248,6 +248,7 @@ iab llorem Lorem ipsum dolor sit amet... Lorem ipsum dolor sit amet... Jag ska f
 " Spelling corrects. Just for example. Add yours below.
 iab teh the
 iab Teh The
+iab slef self
 
 
 
