@@ -42,6 +42,7 @@ Plugins that I use
 * [NERD_Tree](https://github.com/vim-scripts/The-NERD-tree)
 * [Surround](https://github.com/tpope/vim-surround)
 * [Gundo](https://github.com/sjl/gundo.vim)
+* [Multiselect](http://www.vim.org/scripts/script.php?script_id=953)
 
 
 Useful links
