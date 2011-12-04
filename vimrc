@@ -140,6 +140,15 @@ map <left> :bp<cr>
 nmap gj <C-f>
 nmap gk <C-b>
 
+" Automatically append closing characters
+" http://vim.wikia.com/wiki/Automatically_append_closing_characters
+inoremap {      {}<Left>
+inoremap {<CR>  {<CR>}<Esc>O
+inoremap {{     {
+inoremap {}     {}
+inoremap        (  ()<Left>
+inoremap <expr> )  strpart(getline('.'), col('.')-1, 1) == ")" ? "\<Right>" : ")"
+
 " Move text with ctrl + up/down
 " -----------------------------
 " Bubble signle lines
