@@ -16,6 +16,3 @@
 [submodule "bundle/MiniBufExplorer"]
 	path = bundle/MiniBufExplorer
 	url = https://github.com/fholgado/minibufexpl.vim.git
-[submodule "bundle/ruby-debugger"]
-	path = bundle/ruby-debugger
-	url = https://github.com/astashov/vim-ruby-debugger.git
