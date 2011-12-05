@@ -16,9 +16,6 @@
 [submodule "bundle/MiniBufExplorer"]
 	path = bundle/MiniBufExplorer
 	url = https://github.com/fholgado/minibufexpl.vim.git
-[submodule "bundle/multiselect"]
-	path = bundle/multiselect
-	url = https://github.com/vim-scripts/multiselect.git
 [submodule "bundle/supertab"]
 	path = bundle/supertab
 	url = https://github.com/ervandew/supertab.git
