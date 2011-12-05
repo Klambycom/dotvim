@@ -74,11 +74,6 @@ set hlsearch	" Highlight searching
 " http://vim.wikia.com/wiki/Make_Vim_completion_popup_menu_work_just_like_in_an_IDE
 set wildmode=list:longest
 set completeopt=longest,menuone
-inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
-inoremap <expr> <C-n> pumvisible() ? '<C-n>' :
-  \ '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
-inoremap <expr> <M-,> pumvisible() ? '<C-n>' :
-  \ '<C-x><C-o><C-n><C-p><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
 
 " Put swap files in /tmp file
 " ---------------------------
@@ -99,7 +94,7 @@ imap jj <esc>
 " Shortcut to rapidly toggle `set list`
 nmap <leader>l :set list!<CR>
 " Map a change directory to the desktop - Mac specific
-nmap <leader>d :cd ~/Desktop<cr>:e.<cr>
+" nmap <leader>d :cd ~/Desktop<cr>:e.<cr>
 " Shortcut for editing .vimrc file in a new tab
 nmap <leader>ev :tabedit $MYVIMRC<cr>
 " Hard-wrap paragraphs of text
@@ -107,7 +102,7 @@ nnoremap <leader>q gqip
 " Shortcut to fold tags with leader (usually \) + ft
 nnoremap <leader>ft Vatzf
 " Map code completion to , + tab
-imap <leader><tab> <C-x><C-o>
+imap <leader><tab> <C-x><C-u>
 " Delete all buffers (via Derek Wyatt)
 nmap <silent> <leader>da :exec "1," . bufnr('$') . "bd"<cr>
 " Clear search
@@ -247,6 +242,14 @@ let g:miniBufExplSplitBelow=1
 let g:miniBufExplorerMoreThanOne=4
 let g:miniBufExplUseSingleClick=1
 
+" Eclim
+" -----
+nnoremap <silent> <buffer> <leader>i :JavaImport<cr>
+nnoremap <silent> <buffer> <leader>d :JavaDocSearch -x declarations<cr>
+nnoremap <silent> <buffer> <cr> :JavaSearchContext<cr>
+
+" SuperTab like snippets behavior. 
+let g:SuperTabDefaultCompletionType = "context" 
 
 
 " Abbreviations
