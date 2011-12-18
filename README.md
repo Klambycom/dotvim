@@ -44,6 +44,7 @@ Plugins that I use
 * [Gundo](https://github.com/sjl/gundo.vim)
 * [SuperTab](https://github.com/ervandew/supertab)
 * [Eclim](http://eclim.org/) (must be installed separately)
+* [Vim-scala](https://github.com/derekwyatt/vim-scala)
 
 Useful links
 ------------
