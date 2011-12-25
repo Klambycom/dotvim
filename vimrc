@@ -137,10 +137,7 @@ nmap gk <C-b>
 
 " Automatically append closing characters
 " http://vim.wikia.com/wiki/Automatically_append_closing_characters
-inoremap {      {}<Left>
 inoremap {<CR>  {<CR>}<Esc>O
-inoremap {{     {
-inoremap {}     {}
 
 " Move text with ctrl + up/down
 " -----------------------------
