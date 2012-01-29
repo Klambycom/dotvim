@@ -35,11 +35,11 @@ syntax on
 
 " Tab stuff
 " ---------
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
-"set expandtab " Space?
-set noexpandtab " Tab?
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set expandtab " Space?
+"set noexpandtab " Tab?
 
 " Indent stuff
 " ------------
@@ -138,6 +138,7 @@ nmap gk <C-b>
 " Automatically append closing characters
 " http://vim.wikia.com/wiki/Automatically_append_closing_characters
 inoremap {<CR>  {<CR>}<Esc>O
+inoremap {<Tab> {  }<Esc>hi
 
 " Move text with ctrl + up/down
 " -----------------------------
@@ -154,7 +155,7 @@ vmap <C-Down> xp`[V`]
 " Language specific
 " =================
 if has("autocmd")
-	autocmd FileType html,css,scss,ruby,pml,yaml,coffee,vim setlocal ts=2 sts=2 sw=2 expandtab
+	autocmd FileType html,css,scss,ruby,pml,yaml,coffee,vim,erb setlocal ts=2 sts=2 sw=2 expandtab
 	autocmd FileType javascript setlocal ts=4 sts=4 sw=4 noexpandtab
 	autocmd FileType markdown setlocal wrap linebreak nolist
 	autocmd BufNewFile,BufRead *.rss setfiletype xml
@@ -259,6 +260,8 @@ iab llorem Lorem ipsum dolor sit amet... Lorem ipsum dolor sit amet... Jag ska f
 iab teh the
 iab Teh The
 iab slef self
+iab contetn content
+iab reponse response
 
 
 
