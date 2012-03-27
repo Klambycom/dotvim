@@ -161,6 +161,7 @@ if has("autocmd")
 	autocmd BufNewFile,BufRead *.rss setfiletype xml
 	autocmd BufNewFile,BufRead Rakefile,Capfile,Gemfile,Termfile,Vagrantfile,config.ru set filetype=ruby
 	autocmd BufRead,BufNewFile *.erb set filetype=erb.eruby.html " Make html.erb use html5.vim
+  autocmd BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
 endif
 
 " Run current rubyfile
