@@ -94,7 +94,8 @@ set directory=~/.tmp
 
 " Keyboard & Shortcuts
 " ====================
-let mapleader = ',' " Whant a different map leader than \
+let mapleader = ','
+let maplocalleader = '\\'
 "set timeoutlen=500 " Ever notice a slight lag after typing the leader key + command? This lowers the timeout.
 
 " Saves time
