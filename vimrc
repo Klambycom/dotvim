@@ -168,6 +168,12 @@ vnoremap <C-Down> xp`[V`]
 
 " Language specific
 " =================
+augroup filetype_javascript
+  autocmd!
+  autocmd Filetype javascript nnoremap <leader>c I//<esc>
+  autocmd Filetype javascript vnoremap <leader>c <esc>`<I/*<esc>`>A*/<esc>
+augroup END
+
 if has("autocmd")
 	autocmd FileType html,css,scss,ruby,pml,yaml,coffee,vim,erb setlocal ts=2 sts=2 sw=2 expandtab
 	autocmd FileType javascript setlocal ts=4 sts=4 sw=4 noexpandtab
@@ -177,10 +183,6 @@ if has("autocmd")
 	autocmd BufRead,BufNewFile *.erb set filetype=erb.eruby.html " Make html.erb use html5.vim
   autocmd BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
 endif
-
-" Comment out javascript code
-autocmd Filetype javascript nnoremap <leader>c I//<esc>
-autocmd Filetype javascript vnoremap <leader>c <esc>`<I/*<esc>`>A*/<esc>
 
 " Run current rubyfile
 nnoremap <leader>r :w<cr>:!ruby %<cr>
