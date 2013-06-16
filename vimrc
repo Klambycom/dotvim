@@ -1,6 +1,16 @@
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
+if has("terminfo")
+  let &t_Co=16
+  let &t_AB="\<Esc>[%?%p1%{8}%<%t%p1%{40}%+%e%p1%{92}%+%;%dm"
+  let &t_AF="\<Esc>[%?%p1%{8}%<%t%p1%{30}%+%e%p1%{82}%+%;%dm"
+else
+  let &t_Co=16
+  let &t_Sf="\<Esc>[3%dm"
+  let &t_Sb="\<Esc>[4%dm"
+endif
+
 " Global
 " ======
 set nocompatible	" Forget compatibility with Vi. Who cares.
@@ -77,8 +87,8 @@ set completeopt=longest,menuone
 
 " Put swap files in /tmp file
 " ---------------------------
-set backupdir=~/tmp
-set directory=~/tmp
+set backupdir=~/.tmp
+set directory=~/.tmp
 
 
 
@@ -105,8 +115,6 @@ nnoremap <leader>ft Vatzf
 imap <leader><tab> <C-x><C-u>
 " Delete all buffers (via Derek Wyatt)
 nmap <silent> <leader>da :exec "1," . bufnr('$') . "bd"<cr>
-" Clear search
-abbrev clear /khfaleajkd<cr>
 " Switch to the directory of the current file with <leader>cd
 nmap <leader>cd :cd %:p:h<cr>:pwd<cr>
 
@@ -174,7 +182,8 @@ abbrev irb :w<cr>:!irb -r ./%<cr>
 if has("gui_macvim")
 	" Set the color scheme. Change this to your preference.
 	" Here's 100 to choose from: http://www.vim.org/scripts/script.php?script_id=625
-	colorscheme desert
+	"colorscheme desert
+  colorscheme codeschool
 
 	" Set font type and size
 	set guifont=Monaco:h12
@@ -214,7 +223,8 @@ endif
 " --------
 " Shortcut for NERDTreeToggle
 "imap ,nt :NERDTreeToggle
-nnoremap <F5> :NERDTreeToggle<CR>
+nnoremap <F4> :NERDTreeToggle<CR>
+let g:NERDTreeWinPos = "right"
 
 " Show hidden files in NerdTree
 " let NERDTreeShowHidden=1
@@ -232,8 +242,12 @@ let g:user_zen_complete_tag = 1
 
 " Gundo
 " -----
-nnoremap <F4> :NERDTreeClose<CR>:GundoToggle<CR>
+nnoremap <F5> :NERDTreeClose<CR>:GundoToggle<CR>
 let g:gundo_preview_bottom = 1
+
+" Tagbar
+" ------
+nmap <F6> :TagbarToggle<CR>
 
 " MiniBufExplorer
 " ---------------
@@ -263,6 +277,9 @@ iab Teh The
 iab slef self
 iab contetn content
 iab reponse response
+iab suer user
+iab repsonse response
+iab dependet dependent
 
 
 
