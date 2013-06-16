@@ -271,16 +271,11 @@ let g:SuperTabDefaultCompletionType = "context"
 iab lorem Lorem ipsum dolor sit amet... Jag ska fylla i mer sen
 iab llorem Lorem ipsum dolor sit amet... Lorem ipsum dolor sit amet... Jag ska fylla i mer sen
 
-" Spelling corrects. Just for example. Add yours below.
-iab teh the
-iab Teh The
-iab slef self
-iab contetn content
-iab reponse response
-iab suer user
-iab repsonse response
-iab dependet dependent
-
+" Spelling corrects
+source .vim/abbreviations
+" TODO:
+" :!echo 'iab rod ord' >> .vim/abbreviations
+" :source .vim/abbreviations
 
 
 " Test
