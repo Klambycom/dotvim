@@ -121,6 +121,9 @@ nmap <leader>cd :cd %:p:h<cr>:pwd<cr>
 " Better zen coding mapping
 imap <leader>t <C-e>
 
+" Make word uppercase
+imap <leader>u <esc>viwUea
+
 " Load the current buffer in Firefox, Chrome or Safari
 abbrev ff :! open -a firefox.app %:p<cr>
 abbrev chr :! open -a Google\ Chrome %:p<cr>
