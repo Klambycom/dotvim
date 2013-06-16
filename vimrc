@@ -124,6 +124,10 @@ imap <leader>t <C-e>
 " Make word uppercase
 imap <leader>u <esc>viwUea
 
+" Javascript console.log debugging
+nmap <leader>d Oconsole.log("DEBUGGING  <esc>:execute "normal! i" . ( line(".") )<cr>a");<esc>hh
+vmap <leader>d yOconsole.log(<esc>pa);<esc>
+
 " Load the current buffer in Firefox, Chrome or Safari
 abbrev ff :! open -a firefox.app %:p<cr>
 abbrev chr :! open -a Google\ Chrome %:p<cr>
