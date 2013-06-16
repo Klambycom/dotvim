@@ -262,12 +262,6 @@ let g:miniBufExplSplitBelow=1
 let g:miniBufExplorerMoreThanOne=4
 let g:miniBufExplUseSingleClick=1
 
-" Eclim
-" -----
-nnoremap <silent> <buffer> <leader>i :JavaImport<cr>
-nnoremap <silent> <buffer> <leader>d :JavaDocSearch -x declarations<cr>
-nnoremap <silent> <buffer> <cr> :JavaSearchContext<cr>
-
 " SuperTab like snippets behavior. 
 let g:SuperTabDefaultCompletionType = "context" 
 
