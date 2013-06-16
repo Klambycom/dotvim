@@ -98,35 +98,35 @@ let mapleader = ',' " Whant a different map leader than \
 "set timeoutlen=500 " Ever notice a slight lag after typing the leader key + command? This lowers the timeout.
 
 " Saves time
-nmap <space> :
-imap jj <esc>
+nnoremap <space> :
+inoremap jj <esc>
 
 " Shortcut to rapidly toggle `set list`
-nmap <leader>l :set list!<CR>
+nnoremap <leader>l :set list!<CR>
 " Map a change directory to the desktop - Mac specific
-" nmap <leader>d :cd ~/Desktop<cr>:e.<cr>
+" nnoremap <leader>d :cd ~/Desktop<cr>:e.<cr>
 " Shortcut for editing .vimrc file in a new tab
-nmap <leader>ev :tabedit $MYVIMRC<cr>
+nnoremap <leader>ev :tabedit $MYVIMRC<cr>
 " Hard-wrap paragraphs of text
 nnoremap <leader>q gqip
 " Shortcut to fold tags with leader (usually \) + ft
 nnoremap <leader>ft Vatzf
 " Map code completion to , + tab
-imap <leader><tab> <C-x><C-u>
+inoremap <leader><tab> <C-x><C-u>
 " Delete all buffers (via Derek Wyatt)
-nmap <silent> <leader>da :exec "1," . bufnr('$') . "bd"<cr>
+nnoremap <silent> <leader>da :exec "1," . bufnr('$') . "bd"<cr>
 " Switch to the directory of the current file with <leader>cd
-nmap <leader>cd :cd %:p:h<cr>:pwd<cr>
+nnoremap <leader>cd :cd %:p:h<cr>:pwd<cr>
 
 " Better zen coding mapping
-imap <leader>t <C-e>
+inoremap <leader>t <C-e>
 
 " Make word uppercase
-imap <leader>u <esc>viwUea
+inoremap <leader>u <esc>viwUea
 
 " Javascript console.log debugging
-nmap <leader>d Oconsole.log("DEBUGGING  <esc>:execute "normal! i" . ( line(".") )<cr>a");<esc>hh
-vmap <leader>d yOconsole.log(<esc>pa);<esc>
+nnoremap <leader>d Oconsole.log("DEBUGGING  <esc>:execute "normal! i" . ( line(".") )<cr>a");<esc>hh
+vnoremap <leader>d yOconsole.log(<esc>pa);<esc>
 
 " Load the current buffer in Firefox, Chrome or Safari
 abbrev ff :! open -a firefox.app %:p<cr>
@@ -134,21 +134,21 @@ abbrev chr :! open -a Google\ Chrome %:p<cr>
 abbrev safari :! open -a safari.app %:p<cr>
 
 " Speed up buffer switching
-map <C-k> <C-W>k
-map <C-j> <C-W>j
-map <C-h> <C-W>h
-map <C-l> <C-W>l
+noremap <C-k> <C-W>k
+noremap <C-j> <C-W>j
+noremap <C-h> <C-W>h
+noremap <C-l> <C-W>l
 
 " Simple calculator (1+1<C-a> => 1+1=2)
 ino <C-A> <C-O>yiW<End>=<C-R>=<C-R>0<CR>
 
 " Use the arrows to switch buffer
-map <right> :bn<cr>
-map <left> :bp<cr>
+noremap <right> :bn<cr>
+noremap <left> :bp<cr>
 
 " Scroll page up/down with gj/gk
-nmap gj <C-f>
-nmap gk <C-b>
+nnoremap gj <C-f>
+nnoremap gk <C-b>
 
 " Automatically append closing characters
 " http://vim.wikia.com/wiki/Automatically_append_closing_characters
@@ -158,12 +158,12 @@ inoremap {<Tab> {  }<Esc>hi
 " Move text with ctrl + up/down
 " -----------------------------
 " Bubble signle lines
-nmap <C-Up> ddkP
-nmap <C-Down> ddp
+nnoremap <C-Up> ddkP
+nnoremap <C-Down> ddp
 
 " Buble multiple lines
-vmap <C-Up> xkP`[V`]
-vmap <C-Down> xp`[V`]
+vnoremap <C-Up> xkP`[V`]
+vnoremap <C-Down> xp`[V`]
 
 
 
@@ -180,7 +180,7 @@ if has("autocmd")
 endif
 
 " Run current rubyfile
-nmap <leader>r :w<cr>:!ruby %<cr>
+nnoremap <leader>r :w<cr>:!ruby %<cr>
 abbrev irb :w<cr>:!irb -r ./%<cr>
 
 
@@ -229,7 +229,7 @@ endif
 " NERDTree
 " --------
 " Shortcut for NERDTreeToggle
-"imap ,nt :NERDTreeToggle
+"inoremap ,nt :NERDTreeToggle
 nnoremap <F4> :NERDTreeToggle<CR>
 let g:NERDTreeWinPos = "right"
 
@@ -254,7 +254,7 @@ let g:gundo_preview_bottom = 1
 
 " Tagbar
 " ------
-nmap <F6> :TagbarToggle<CR>
+nnoremap <F6> :TagbarToggle<CR>
 
 " MiniBufExplorer
 " ---------------
