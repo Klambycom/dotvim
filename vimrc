@@ -178,6 +178,10 @@ if has("autocmd")
   autocmd BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
 endif
 
+" Comment out javascript code
+autocmd Filetype javascript nnoremap <leader>c I//<esc>
+autocmd Filetype javascript vnoremap <leader>c <esc>`<I/*<esc>`>A*/<esc>
+
 " Run current rubyfile
 nnoremap <leader>r :w<cr>:!ruby %<cr>
 abbrev irb :w<cr>:!irb -r ./%<cr>
