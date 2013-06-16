@@ -104,8 +104,6 @@ inoremap jj <esc>
 
 " Shortcut to rapidly toggle `set list`
 nnoremap <leader>l :set list!<CR>
-" Map a change directory to the desktop - Mac specific
-" nnoremap <leader>d :cd ~/Desktop<cr>:e.<cr>
 " Shortcut for editing .vimrc file in a new tab
 nnoremap <leader>ev :tabedit $MYVIMRC<cr>
 " Hard-wrap paragraphs of text
