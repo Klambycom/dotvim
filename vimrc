@@ -182,8 +182,8 @@ augroup filetype_markdown
   autocmd FileType markdown setlocal wrap linebreak nolist
 
   " Nearest headline
-  autocmd FileType markdown onoremap ih :<c-u>execute "normal! jj?^==\\+$\r:nohlsearch\rkvg_"<cr>
-  autocmd FileType markdown onoremap ah :<c-u>execute "normal! jj?^==\\+$\r:nohlsearch\rg_vk0"<cr>
+  autocmd FileType markdown onoremap ih :<c-u>execute "normal! jj?^[=-][=-]\\+$\r:nohlsearch\rkvg_"<cr>
+  autocmd FileType markdown onoremap ah :<c-u>execute "normal! jj?^[=-][=-]\\+$\r:nohlsearch\rg_vk0"<cr>
 augroup END
 
 augroup filetype_ruby
