@@ -168,6 +168,7 @@ vnoremap <C-Down> xp`[V`]
 
 " Language specific
 " =================
+" Javascript file settings {{{
 augroup filetype_javascript
   autocmd!
   " TODO Should I use <buffer>?
@@ -176,7 +177,8 @@ augroup filetype_javascript
   autocmd FileType javascript setlocal ts=4 sts=4 sw=4 noexpandtab
   autocmd BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
 augroup END
-
+" }}}
+" Markdown file settings {{{
 augroup filetype_markdown
   autocmd!
   autocmd FileType markdown setlocal wrap linebreak nolist
@@ -185,12 +187,20 @@ augroup filetype_markdown
   autocmd FileType markdown onoremap ih :<c-u>execute "normal! jj?^[=-][=-]\\+$\r:nohlsearch\rkvg_"<cr>
   autocmd FileType markdown onoremap ah :<c-u>execute "normal! jj?^[=-][=-]\\+$\r:nohlsearch\rg_vk0"<cr>
 augroup END
-
+" }}}
+" Ruby file settings {{{
 augroup filetype_ruby
   autocmd!
   autocmd BufNewFile,BufRead Rakefile,Capfile,Gemfile,Termfile,Vagrantfile,config.ru set filetype=ruby
   autocmd BufRead,BufNewFile *.erb set filetype=erb.eruby.html " Make html.erb use html5.vim
 augroup END
+" }}}
+" Vimscript file settings {{{
+augroup filetype_vim
+  autocmd!
+  autocmd FileType vim setlocal foldmethod=marker
+augroup END
+" }}}
 
 autocmd FileType html,css,scss,ruby,pml,yaml,coffee,vim,erb setlocal ts=2 sts=2 sw=2 expandtab
 autocmd BufNewFile,BufRead *.rss setfiletype xml
