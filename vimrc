@@ -170,21 +170,25 @@ vnoremap <C-Down> xp`[V`]
 " =================
 augroup filetype_javascript
   autocmd!
+  " TODO Should I use <buffer>?
   autocmd Filetype javascript nnoremap <leader>c I//<esc>
   autocmd Filetype javascript vnoremap <leader>c <esc>`<I/*<esc>`>A*/<esc>
-	autocmd FileType javascript setlocal ts=4 sts=4 sw=4 noexpandtab
+  autocmd FileType javascript setlocal ts=4 sts=4 sw=4 noexpandtab
   autocmd BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
 augroup END
 
 augroup filetype_markdown
   autocmd!
-	autocmd FileType markdown setlocal wrap linebreak nolist
+  autocmd FileType markdown setlocal wrap linebreak nolist
+
+  " Nearest headline
+  autocmd FileType markdown onoremap ih :<c-u>execute "normal! ?^==\\+$\r:nohlsearch\rkvg_"<cr>
 augroup END
 
 augroup filetype_ruby
   autocmd!
-	autocmd BufNewFile,BufRead Rakefile,Capfile,Gemfile,Termfile,Vagrantfile,config.ru set filetype=ruby
-	autocmd BufRead,BufNewFile *.erb set filetype=erb.eruby.html " Make html.erb use html5.vim
+  autocmd BufNewFile,BufRead Rakefile,Capfile,Gemfile,Termfile,Vagrantfile,config.ru set filetype=ruby
+  autocmd BufRead,BufNewFile *.erb set filetype=erb.eruby.html " Make html.erb use html5.vim
 augroup END
 
 autocmd FileType html,css,scss,ruby,pml,yaml,coffee,vim,erb setlocal ts=2 sts=2 sw=2 expandtab
