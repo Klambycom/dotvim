@@ -166,6 +166,7 @@ vnoremap <C-Down> xp`[V`]
 
 " Exercise from Learn Vimscript the Hard Way.
 nnoremap <leader>w :match Error /\v\s$/<cr>
+nnoremap <leader>W :match Error /dfafahlasfdjwjofds/<cr>
 
 
 
