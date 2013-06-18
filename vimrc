@@ -164,6 +164,9 @@ nnoremap <C-Down> ddp
 vnoremap <C-Up> xkP`[V`]
 vnoremap <C-Down> xp`[V`]
 
+" Exercise from Learn Vimscript the Hard Way.
+nnoremap <leader>w :match Error /\v\s$/<cr>
+
 
 
 " Language specific
@@ -303,6 +306,10 @@ source .vim/abbreviations
 " TODO:
 " :!echo 'iab rod ord' >> .vim/abbreviations
 " :source .vim/abbreviations
+"
+" function AddAbbreviation(wrong, right)
+"   ...
+" endfunction
 
 
 " Test
