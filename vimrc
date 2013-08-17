@@ -168,6 +168,9 @@ vnoremap <C-Down> xp`[V`]
 nnoremap <leader>w :match Error /\v\s$/<cr>
 nnoremap <leader>W :match Error /dfafahlasfdjwjofds/<cr>
 
+" Find word in other files
+"nnoremap <leader>g :silent execute "grep! -R " . shellescape(expand("<cWORD>")) . " ."<cr>:copen<cr>
+
 
 
 " Language specific
@@ -303,7 +306,7 @@ iab lorem Lorem ipsum dolor sit amet... Jag ska fylla i mer sen
 iab llorem Lorem ipsum dolor sit amet... Lorem ipsum dolor sit amet... Jag ska fylla i mer sen
 
 " Spelling corrects
-source .vim/abbreviations
+source ~/.vim/abbreviations
 " TODO:
 " :!echo 'iab rod ord' >> .vim/abbreviations
 " :source .vim/abbreviations
