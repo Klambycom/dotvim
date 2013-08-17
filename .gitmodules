@@ -1,9 +1,6 @@
 [submodule "bundle/snipMate"]
 	path = bundle/snipMate
 	url = https://github.com/msanders/snipmate.vim.git
-[submodule "bundle/zencoding"]
-	path = bundle/zencoding
-	url = https://github.com/mattn/zencoding-vim.git
 [submodule "bundle/NERDTree"]
 	path = bundle/NERDTree
 	url = https://github.com/scrooloose/nerdtree.git
