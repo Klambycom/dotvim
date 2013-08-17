@@ -38,7 +38,7 @@ Plugins that I use
 ------------------
 
 * [snipMate](https://github.com/msanders/snipmate.vim)
-* [Zencoding](https://github.com/mattn/zencoding-vim)
+* ~~Zencoding~~ [Emmet](https://github.com/mattn/emmet-vim)
 * [NERD_Tree](https://github.com/vim-scripts/The-NERD-tree)
 * [Surround](https://github.com/tpope/vim-surround)
 * [Gundo](https://github.com/sjl/gundo.vim)

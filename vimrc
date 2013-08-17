@@ -117,9 +117,6 @@ nnoremap <silent> <leader>da :exec "1," . bufnr('$') . "bd"<cr>
 " Switch to the directory of the current file with <leader>cd
 nnoremap <leader>cd :cd %:p:h<cr>:pwd<cr>
 
-" Better zen coding mapping
-inoremap <leader>t <C-e>
-
 " Make word uppercase
 inoremap <leader>u <esc>viwUea
 
@@ -275,10 +272,9 @@ let g:NERDTreeWinPos = "right"
 "   autocmd VimEnter * wincmd p
 " endif
 
-" Zen Coding
-" ----------
-let g:user_zen_expandabbr_key = '<C-e>' " Change zen coding expand key to control + e
-let g:user_zen_complete_tag = 1
+" Emmet
+" -----
+let g:user_emmet_expandabbr_key = '<leader>t'
 
 " Gundo
 " -----
