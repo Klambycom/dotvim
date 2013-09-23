@@ -34,3 +34,6 @@
 [submodule "bundle/puppet-syntax"]
 	path = bundle/puppet-syntax
 	url = https://github.com/puppetlabs/puppet-syntax-vim.git
+[submodule "bundle/prolog-syntax"]
+	path = bundle/prolog-syntax
+	url = https://github.com/adimit/prolog.vim.git
