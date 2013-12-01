@@ -37,3 +37,6 @@
 [submodule "bundle/prolog-syntax"]
 	path = bundle/prolog-syntax
 	url = https://github.com/adimit/prolog.vim.git
+[submodule "bundle/io"]
+	path = bundle/io
+	url = https://github.com/xhr/vim-io.git
