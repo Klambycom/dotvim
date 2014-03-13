@@ -45,6 +45,7 @@ Plugins that I use
 * [SuperTab](https://github.com/ervandew/supertab)
 * [Eclim](http://eclim.org/) (must be installed separately)
 * [Vim-scala](https://github.com/derekwyatt/vim-scala)
+* [Slime](https://github.com/pry/pry/wiki/Setting-up-Rails-or-Heroku-to-use-Pry)
 
 Useful links
 ------------
