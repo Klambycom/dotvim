@@ -70,7 +70,7 @@ set number					" Show lines numbers
 set ruler					" Display current cursor position in lower right corner.
 set laststatus=2			" Always show the status line
 " set linespace=3			" Prefer a slightly higher line height
-set list					" Show linebrake and tab symbols
+"set list					" Show linebrake and tab symbols
 set listchars=tab:▸\ ,eol:¬ " Use the same symbols as TextMate for tabstops and EOLs
 
 " Search
@@ -195,7 +195,7 @@ augroup END
 " Ruby file settings {{{
 augroup filetype_ruby
   autocmd!
-  autocmd BufNewFile,BufRead Rakefile,Capfile,Gemfile,Termfile,Vagrantfile,config.ru set filetype=ruby
+  autocmd BufNewFile,BufRead Rakefile,Capfile,Gemfile,Termfile,Vagrantfile,config.ru,*.rabl set filetype=ruby
   autocmd BufRead,BufNewFile *.erb set filetype=erb.eruby.html " Make html.erb use html5.vim
 augroup END
 " }}}
