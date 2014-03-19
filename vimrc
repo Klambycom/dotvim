@@ -178,7 +178,7 @@ augroup filetype_javascript
   " TODO Should I use <buffer>?
   autocmd Filetype javascript nnoremap <leader>c I//<esc>
   autocmd Filetype javascript vnoremap <leader>c <esc>`<I/*<esc>`>A*/<esc>
-  autocmd FileType javascript setlocal ts=4 sts=4 sw=4 noexpandtab
+  autocmd FileType javascript setlocal ts=4 sts=4 sw=4 expandtab
   autocmd BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
 augroup END
 " }}}
