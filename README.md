@@ -8,15 +8,20 @@ Download:
 
 	git clone git://github.com/klambycom/dotvim.git
 
+Create symlinks:
+
+	ln -s dotvim ~/.vim
+	ln -s dotvim/vimrc ~/.vimrc
+
+Create directory for temp-files:
+
+	mkdir ~/.tmp
+
 Install plugins:
 
 	cd ~/.vim
 	git submodule init
 	git submodule update
-
-Create symlink:
-
-	ln -s ~/.vim/vimrc ~/.vimrc
 
 Adding Plugin Bundles
 ---------------------
