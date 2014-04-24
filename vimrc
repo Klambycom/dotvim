@@ -232,8 +232,8 @@ if has("gui_macvim")
 	set fuoptions=maxhorz,maxvert
 
   " Hide right-hand scrollbar
-  set go-=r " Do I really want this??
-  set go-=R " Do I really want this??
+  set go-=r
+  set go-=R
 
   " Hide left-hand scrollbar
   set go-=l 
@@ -244,12 +244,14 @@ if has("gui_macvim")
 " CUI
 " ===
 else
-	" Set the color scheme. Change this to your preference.
-	" Here's 100 to choose from: http://www.vim.org/scripts/script.php?script_id=625
+  syntax enable
+  set background=dark
+  " colorscheme solarized
 	colorscheme desert256
+  " colorscheme codeschool
 
 	" Set font type and size
-	set guifont=Monaco:h13
+	set guifont=Monaco:h10
 endif
 
 
