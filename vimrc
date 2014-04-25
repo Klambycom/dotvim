@@ -102,6 +102,8 @@ let maplocalleader = '\\'
 nnoremap <space> :
 inoremap jj <esc>
 
+" Ctrl-z without stupid ctrl, fg to get back
+nnoremap <leader>s <C-z>
 " Shortcut to rapidly toggle `set list`
 nnoremap <leader>l :set list!<CR>
 " Shortcut for editing .vimrc file in a new tab
