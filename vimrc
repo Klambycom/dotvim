@@ -132,8 +132,10 @@ abbrev chr :! open -a Google\ Chrome %:p<cr>
 abbrev safari :! open -a safari.app %:p<cr>
 
 " Speed up buffer switching
-noremap <C-k> <C-W>k
-noremap <C-j> <C-W>j
+"noremap <C-k> <C-W>k
+"noremap <C-j> <C-W>j
+noremap <C-k> :bp
+noremap <C-j> :bn
 noremap <C-h> <C-W>h
 noremap <C-l> <C-W>l
 

@@ -49,3 +49,6 @@
 [submodule "bundle/CSApprox"]
 	path = bundle/CSApprox
 	url = https://github.com/godlygeek/csapprox.git
+[submodule "bundle/antlr"]
+	path = bundle/antlr
+	url = git://github.com/blinks/vim-antlr.git
