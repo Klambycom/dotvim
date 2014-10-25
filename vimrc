@@ -134,8 +134,8 @@ abbrev safari :! open -a safari.app %:p<cr>
 " Speed up buffer switching
 "noremap <C-k> <C-W>k
 "noremap <C-j> <C-W>j
-noremap <C-k> :bp
-noremap <C-j> :bn
+noremap <C-k> :bp<cr>
+noremap <C-j> :bn<cr>
 noremap <C-h> <C-W>h
 noremap <C-l> <C-W>l
 
@@ -169,6 +169,9 @@ vnoremap <C-Down> xp`[V`]
 nnoremap <leader>w :match Error /\v\s$/<cr>
 nnoremap <leader>W :match Error /dfafahlasfdjwjofds/<cr>
 
+" select pasted text
+nnoremap <expr> gp '`[' . strpart(getregtype(), 0, 1) . '`]'
+
 " Find word in other files
 "nnoremap <leader>g :silent execute "grep! -R " . shellescape(expand("<cWORD>")) . " ."<cr>:copen<cr>
 
@@ -186,6 +189,12 @@ augroup filetype_javascript
   autocmd BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
 augroup END
 " }}}
+" Javascript file settings {{{
+augroup filetype_coffee
+  autocmd!
+  autocmd FileType javascript setlocal ts=2 sts=2 sw=2 expandtab
+augroup END
+" }}}
 " Markdown file settings {{{
 augroup filetype_markdown
   autocmd!
@@ -201,6 +210,12 @@ augroup filetype_ruby
   autocmd!
   autocmd BufNewFile,BufRead Rakefile,Capfile,Gemfile,Termfile,Vagrantfile,config.ru,*.rabl set filetype=ruby
   autocmd BufRead,BufNewFile *.erb set filetype=erb.eruby.html " Make html.erb use html5.vim
+augroup END
+" }}}
+" Prolog file settings {{{
+augroup filetype_prolog
+  autocmd!
+  autocmd BufNewFile,BufRead *.pl set filetype=prolog
 augroup END
 " }}}
 " Vimscript file settings {{{
