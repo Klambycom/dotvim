@@ -340,6 +340,11 @@ source ~/.vim/abbreviations
 "   ...
 " endfunction
 
+" JSLint
+" ======
+" Disable JSLint
+let g:JSLintHighlightErrorLine = 0
+
 
 " Test
 " ====
