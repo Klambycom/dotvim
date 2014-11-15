@@ -52,3 +52,6 @@
 [submodule "bundle/antlr"]
 	path = bundle/antlr
 	url = git://github.com/blinks/vim-antlr.git
+[submodule "bundle/vim-jsx"]
+	path = bundle/vim-jsx
+	url = https://github.com/mxw/vim-jsx.git
