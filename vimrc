@@ -66,6 +66,7 @@ set formatoptions=qrn1
 " -------
 set showcmd					" Show command in button right partion of the screen
 set number					" Show lines numbers
+set relativenumber
 " set relativenumber		" Prefer relative line numbering?
 set ruler					" Display current cursor position in lower right corner.
 set laststatus=2			" Always show the status line
