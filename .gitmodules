@@ -55,3 +55,6 @@
 [submodule "bundle/vim-jsx"]
 	path = bundle/vim-jsx
 	url = https://github.com/mxw/vim-jsx.git
+[submodule "bundle/wakatime"]
+	path = bundle/wakatime
+	url = https://github.com/wakatime/vim-wakatime.git
