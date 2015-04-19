@@ -58,3 +58,6 @@
 [submodule "bundle/wakatime"]
 	path = bundle/wakatime
 	url = https://github.com/wakatime/vim-wakatime.git
+[submodule "bundle/yajs"]
+	path = bundle/yajs
+	url = https://github.com/othree/yajs.vim.git
