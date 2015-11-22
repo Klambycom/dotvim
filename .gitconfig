@@ -1,0 +1,19 @@
+[alias]
+  # Which files are receiving the most "love"
+  churn = !git log --all -M -C --name-only --format='format:' "$@" | sort | grep -v '^$' | uniq -c | sort | awk 'BEGIN {print "count,file"} {print $1 "," $2}'
+
+  # Start a new local repository and perform initial commit
+  this = !git init && git add . && git commmit -m \"Initial commit\"
+
+[user]
+  name = Christian Nilsson
+  email = christian@klamby.com
+
+[core]
+  editor = vim
+
+[url "https://github.com/"]
+  insteadOf = gh:
+
+[url "https://gist.github.com/"]
+  insteadOf = gist:
