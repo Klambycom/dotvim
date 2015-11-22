@@ -1,4 +1,35 @@
+" Setup Vundle
+" ============
+set nocompatible
+filetype off
 
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+
+" Plugins
+Plugin 'msanders/snipmate.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'tpope/vim-surround'
+Plugin 'sjl/gundo.vim'
+Plugin 'fholgado/minibufexpl.vim'
+Plugin 'ervandew/supertab'
+Plugin 'Lokaltog/vim-powerline'
+Plugin 'majutsushi/tagbar'
+Plugin 'mattn/emmet-vim'
+
+" Syntaxes
+Plugin 'mxw/vim-jsx'
+Plugin 'othree/yajs.vim'
+
+call vundle#end()
+
+filetype plugin indent on
+syntax on
+
+" Global
+" ======
 if has("terminfo")
   let &t_Co=16
   let &t_AB="\<Esc>[%?%p1%{8}%<%t%p1%{40}%+%e%p1%{92}%+%;%dm"
@@ -9,9 +40,6 @@ else
   let &t_Sb="\<Esc>[4%dm"
 endif
 
-" Global
-" ======
-set nocompatible	" Forget compatibility with Vi. Who cares.
 set autowrite		" Write the old file out when switching between files.
 set hidden		  	" Switch between buffers without saving
 set splitbelow		" Split windows below the current window.
@@ -33,13 +61,6 @@ set fileencoding=utf-8
 " Automatically change current directory to that of the file in the buffer
 " Jag kommenterar ut denna för tillfället för att testa hur jag gillar det
 "autocmd BufEnter * cd %:p:h
-
-" Enable filetypes
-" ----------------
-filetype on
-filetype plugin on
-filetype indent on
-syntax on
 
 " Tab stuff
 " ---------
