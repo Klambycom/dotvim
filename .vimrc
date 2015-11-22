@@ -1,5 +1,3 @@
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
 
 if has("terminfo")
   let &t_Co=16
