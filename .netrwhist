@@ -1,7 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/Users/christian/.vim'
-let g:netrw_dirhist_2='/Users/christian'
-let g:netrw_dirhist_3='/Users/christian/.irssi'
-let g:netrw_dirhist_4='/Users/christian/.vim'
-let g:netrw_dirhist_5='/Users/christian/Dropbox/shared_between_computers/Kod/SKOLA/Webbteknisk Introduktion/Projektet'
