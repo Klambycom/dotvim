@@ -18,6 +18,7 @@ Plugin 'ervandew/supertab'
 Plugin 'Lokaltog/vim-powerline'
 Plugin 'majutsushi/tagbar'
 Plugin 'mattn/emmet-vim'
+Plugin 'vimwiki/vimwiki'
 
 " Syntaxes
 Plugin 'mxw/vim-jsx'
@@ -141,6 +142,14 @@ nnoremap <leader>cd :cd %:p:h<cr>:pwd<cr>
 
 " Make word uppercase
 inoremap <leader>u <esc>viwUea
+
+" åäö
+inoremap aa å
+inoremap Aa Å
+inoremap ae ä
+inoremap Ae Ä
+inoremap oe ö
+inoremap Oe Ö
 
 " Javascript console.log debugging
 nnoremap <leader>d Oconsole.log("DEBUGGING  <esc>:execute "normal! i" . ( line(".") )<cr>a");<esc>hh
