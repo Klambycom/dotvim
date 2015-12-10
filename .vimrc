@@ -13,7 +13,7 @@ Plugin 'msanders/snipmate.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-surround'
 Plugin 'sjl/gundo.vim'
-Plugin 'fholgado/minibufexpl.vim'
+"Plugin 'fholgado/minibufexpl.vim'
 Plugin 'ervandew/supertab'
 Plugin 'Lokaltog/vim-powerline'
 Plugin 'majutsushi/tagbar'
@@ -23,6 +23,9 @@ Plugin 'vimwiki/vimwiki'
 " Syntaxes
 Plugin 'mxw/vim-jsx'
 Plugin 'othree/yajs.vim'
+Plugin 'JulesWang/css.vim'
+"Plugin 'genoma/vim-less'
+Plugin 'groenewege/vim-less'
 
 call vundle#end()
 
@@ -68,8 +71,8 @@ set fileencoding=utf-8
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
-set expandtab " Space?
-"set noexpandtab " Tab?
+"set expandtab " Space?
+set noexpandtab " Tab? TODO Templösning!!!!!!!!!!!!!!!!
 
 " Indent stuff
 " ------------
@@ -208,6 +211,16 @@ nnoremap <expr> gp '`[' . strpart(getregtype(), 0, 1) . '`]'
 
 " Language specific
 " =================
+" PHP file settings {{{
+augroup filetype_php
+  autocmd!
+  autocmd FileType php setlocal ts=2 sts=2 sw=2 noexpandtab
+augroup END
+augroup filetype_tpl
+  autocmd!
+  autocmd FileType tpl setlocal ts=2 sts=2 sw=2 noexpandtab
+augroup END
+" }}}
 " Javascript file settings {{{
 augroup filetype_javascript
   autocmd!
@@ -345,9 +358,9 @@ nnoremap <F6> :TagbarToggle<CR>
 
 " MiniBufExplorer
 " ---------------
-let g:miniBufExplSplitBelow=1
-let g:miniBufExplorerMoreThanOne=4
-let g:miniBufExplUseSingleClick=1
+"let g:miniBufExplSplitBelow=1
+"let g:miniBufExplorerMoreThanOne=4
+"let g:miniBufExplUseSingleClick=1
 
 " SuperTab like snippets behavior. 
 let g:SuperTabDefaultCompletionType = "context" 

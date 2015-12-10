@@ -1,3 +1,4 @@
 eclim/*
 plugin/eclim.vim
 .DS_Store
+.vim/bundle/
