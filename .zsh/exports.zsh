@@ -10,7 +10,7 @@ export PATH="/Users/christian/.cabal/bin:$PATH"
 export PATH="/usr/local/heroku/bin:$PATH"
 
 # My scripts
-export PATH="/Users/christian/.scripts:$PATH"
+export PATH="/Users/$(whoami)/.scripts:$PATH"
 
 # Composer (PHP)
 export PATH="/Users/christian/.composer/vendor/bin:$PATH"
