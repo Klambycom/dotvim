@@ -135,13 +135,15 @@ nnoremap <leader>ev :tabedit $MYVIMRC<cr>
 " Hard-wrap paragraphs of text
 nnoremap <leader>q gqip
 " Shortcut to fold tags with leader (usually \) + ft
-nnoremap <leader>ft Vatzf
+"nnoremap <leader>ft Vatzf
 " Map code completion to , + tab
 inoremap <leader><tab> <C-x><C-u>
 " Delete all buffers (via Derek Wyatt)
 nnoremap <silent> <leader>da :exec "1," . bufnr('$') . "bd"<cr>
 " Switch to the directory of the current file with <leader>cd
 nnoremap <leader>cd :cd %:p:h<cr>:pwd<cr>
+" Switch to last edited buffer
+nnoremap <leader>f :b#<cr>
 
 " Make word uppercase
 inoremap <leader>u <esc>viwUea
