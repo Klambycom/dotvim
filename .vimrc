@@ -177,8 +177,8 @@ noremap <C-l> <C-W>l
 ino <C-A> <C-O>yiW<End>=<C-R>=<C-R>0<CR>
 
 " Use the arrows to switch buffer
-noremap <right> :bn<cr>
-noremap <left> :bp<cr>
+"noremap <right> :bn<cr>
+"noremap <left> :bp<cr>
 
 " Scroll page up/down with gj/gk
 nnoremap gj <C-f>
