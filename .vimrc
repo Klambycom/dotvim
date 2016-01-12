@@ -24,6 +24,7 @@ Plugin 'vimwiki/vimwiki'
 Plugin 'mxw/vim-jsx'
 Plugin 'othree/yajs.vim'
 Plugin 'JulesWang/css.vim'
+Plugin 'othree/html5.vim'
 "Plugin 'genoma/vim-less'
 Plugin 'groenewege/vim-less'
 
