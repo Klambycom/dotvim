@@ -169,10 +169,12 @@ abbrev safari :! open -a safari.app %:p<cr>
 " Speed up buffer switching
 "noremap <C-k> <C-W>k
 "noremap <C-j> <C-W>j
-noremap <C-k> :bp<cr>
-noremap <C-j> :bn<cr>
-noremap <C-h> <C-W>h
-noremap <C-l> <C-W>l
+"noremap <C-k> :bp<cr>
+"noremap <C-j> :bn<cr>
+"noremap <C-h> <C-W>h
+"noremap <C-l> <C-W>l
+noremap <C-h> :bp<cr>
+noremap <C-l> :bn<cr>
 
 " Simple calculator (1+1<C-a> => 1+1=2)
 ino <C-A> <C-O>yiW<End>=<C-R>=<C-R>0<CR>
