@@ -22,9 +22,10 @@ Plugin 'vimwiki/vimwiki'
 
 " Syntaxes
 Plugin 'mxw/vim-jsx'
-Plugin 'othree/yajs.vim'
-Plugin 'JulesWang/css.vim'
-Plugin 'othree/html5.vim'
+"Plugin 'othree/yajs.vim'
+"Plugin 'JulesWang/css.vim'
+"Plugin 'othree/html5.vim'
+Plugin 'sheerun/vim-polyglot'
 "Plugin 'genoma/vim-less'
 Plugin 'groenewege/vim-less'
 
