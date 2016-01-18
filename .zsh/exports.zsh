@@ -13,7 +13,7 @@ export PATH="/usr/local/heroku/bin:$PATH"
 export PATH="/Users/$(whoami)/.scripts:$PATH"
 
 # Composer (PHP)
-export PATH="/Users/christian/.composer/vendor/bin:$PATH"
+export PATH="/Users/$(whoami)/.composer/vendor/bin:$PATH"
 
 # rbenv
 #export RBENV_ROOT="$HOME/.rbenv"
