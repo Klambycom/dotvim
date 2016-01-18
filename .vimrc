@@ -28,6 +28,7 @@ Plugin 'mxw/vim-jsx'
 Plugin 'sheerun/vim-polyglot'
 "Plugin 'genoma/vim-less'
 Plugin 'groenewege/vim-less'
+Plugin 'vim-scripts/wikipedia.vim'
 
 call vundle#end()
 
