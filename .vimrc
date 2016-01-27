@@ -55,6 +55,7 @@ set foldenable		" Enable code folding
 set mousehide		" Hide mouse when typing
 set autoread		" Set to auto read when a file is changed from the outside
 set vb t_vb=		" Disable beeping
+set updatetime=100 " Set updatetime to 100ms (default 4000ms). Should change if I notice lag!
 
 set clipboard=unnamed	" Share clipboard with OS
 
