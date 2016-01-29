@@ -127,6 +127,12 @@ let mapleader = ','
 let maplocalleader = '\\'
 "set timeoutlen=500 " Ever notice a slight lag after typing the leader key + command? This lowers the timeout.
 
+" Disable arrow keys
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
+
 " Saves time
 nnoremap <space> :
 inoremap jj <esc>
