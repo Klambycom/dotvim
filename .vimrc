@@ -19,6 +19,7 @@ Plugin 'majutsushi/tagbar'
 Plugin 'mattn/emmet-vim'
 Plugin 'vimwiki/vimwiki'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'joonty/vdebug'
 
 " Syntaxes
 Plugin 'mxw/vim-jsx'
