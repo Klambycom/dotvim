@@ -20,6 +20,7 @@ Plugin 'mattn/emmet-vim'
 Plugin 'vimwiki/vimwiki'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'joonty/vdebug'
+Plugin 'editorconfig/editorconfig-vim'
 
 " Syntaxes
 Plugin 'mxw/vim-jsx'
