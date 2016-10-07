@@ -311,7 +311,21 @@ if has("gui_macvim")
   set go-=l 
   set go-=L 
 
+" NeoVim
+" ======
+elseif has("nvim")
+  syntax enable
 
+  set t_Co=256
+  let &t_AB="\e[48;5;%dm"
+  let &t_AF="\e[38;5;%dm"
+
+  set background=light
+
+  colorscheme grb4
+
+	" Set font type and size
+	set guifont=Monaco:h10
 
 " CUI
 " ===
@@ -418,3 +432,10 @@ source ~/.vim/abbreviations
 
 " Create dictionary for custom expansions
 "set dictionary+=/Users/christian/.vim/dict/PHP.dict
+
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
+autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+autocmd BufWinLeave * call clearmatches()
