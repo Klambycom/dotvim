@@ -5,8 +5,6 @@ source ~/.zsh/prompt.zsh
 source ~/.zsh/change-terminal-name.zsh
 #source ~/.bin/tmuxinator.zsh
 
-export EDITOR='vim'
-
 # Plugin
 source ~/.zsh/colored-man.zsh
 source ~/.zsh/vi-mode.zsh # I think bindkey -v is set somewhere else too, need to remove that.
@@ -48,6 +46,9 @@ alias yolo='sudo'
 # Or, if you don't want/need launchctl, you can just run:
 #     redis-server /usr/local/etc/redis.conf
 alias start-redis='redis-server /usr/local/etc/redis.conf'
+
+# reattach-to-user-namespace is needed because of macOS sierra
+alias vim='reattach-to-user-namespace vim'
 
 
 #Dependencies will be installed to:
