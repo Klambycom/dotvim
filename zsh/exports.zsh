@@ -32,7 +32,8 @@ export TERM=xterm-256color
 export CLICOLOR=1
 export LSCOLORS=Gxfxcxdxbxegedabagacad
 
-export EDITOR="mvim"
+# reattach-to-user-namespace is needed because of macOS sierra
+export EDITOR="reattach-to-user-namespace vim"
 
 # Groovy
 export GROOVY_HOME=/usr/local/opt/groovy/libexec
