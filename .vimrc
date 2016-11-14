@@ -21,6 +21,7 @@ Plugin 'vimwiki/vimwiki'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'joonty/vdebug'
 Plugin 'editorconfig/editorconfig-vim'
+Plugin 'vexxor/phpdoc.vim'
 
 " Syntaxes
 Plugin 'mxw/vim-jsx'
@@ -56,7 +57,7 @@ set updatetime=100 " Set updatetime to 100ms (default 4000ms). Should change if 
 
 set clipboard=unnamed	" Share clipboard with OS
 
-set encoding=utf-8
+"set encoding=utf-8
 set fileencoding=utf-8
 
 " Source the .vimrc file after saving it
@@ -401,6 +402,9 @@ augroup phpSyntaxOverride
 	autocmd!
 	autocmd FileType php call PhpSyntaxOverride()
 augroup END
+
+let g:pdv_cfg_php4always = 0
+noremap <leader>pd :call PhpDoc()<CR>
 
 " Abbreviations
 " =============
