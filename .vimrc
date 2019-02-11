@@ -23,6 +23,10 @@ Plugin 'joonty/vdebug'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'vexxor/phpdoc.vim'
 
+" You also have to install prettier globaly with 'npm install -g prettier' or
+" 'yarn global add prettier'.
+Plugin 'prettier/vim-prettier'
+
 " Syntaxes
 Plugin 'mxw/vim-jsx'
 Plugin 'sheerun/vim-polyglot'
@@ -382,6 +386,14 @@ let g:gundo_preview_bottom = 1
 " Tagbar
 " ------
 nnoremap <F6> :TagbarToggle<CR>
+
+" Prettier
+" --------
+let g:prettier#config#bracket_spacing = 'true'
+let g:prettier#config#jsx_bracket_same_line = 'false'
+let g:prettier#config#arrow_parens = 'avoid'
+let g:prettier#config#trailing_comma = 'es5'
+let g:prettier#config#parser = 'flow'
 
 " MiniBufExplorer
 " ---------------
