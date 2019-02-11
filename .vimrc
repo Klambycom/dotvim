@@ -118,8 +118,8 @@ set completeopt=longest,menuone
 
 " Put swap files in /tmp file
 " ---------------------------
-set backupdir=~/.tmp
-set directory=~/.tmp
+set backupdir=~/.tmp/backup//
+set directory=~/.tmp/swap//
 
 
 
