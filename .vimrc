@@ -121,6 +121,11 @@ set completeopt=longest,menuone
 set backupdir=~/.tmp/backup//
 set directory=~/.tmp/swap//
 
+" Maintain undo history between sessions
+" --------------------------------------
+set undofile
+set undodir=~/.tmp/undo//
+
 
 
 " Keyboard & Shortcuts
