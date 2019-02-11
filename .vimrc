@@ -288,7 +288,7 @@ autocmd FileType html,css,scss,ruby,pml,yaml,coffee,vim,erb setlocal ts=2 sts=2 
 autocmd BufNewFile,BufRead *.rss setfiletype xml
 
 " Run current rubyfile
-nnoremap <leader>r :w<cr>:!ruby %<cr>
+nnoremap <leader>r :w<cr>:!s up<cr>
 abbrev irb :w<cr>:!irb -r ./%<cr>
 
 
