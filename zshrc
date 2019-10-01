@@ -28,6 +28,7 @@ autoload -U compinit
 compinit
 #zstyle ':completion:*:descriptions' format '%U%B%d%b%u' # Don't know I like this
 #zstyle ':completion:*:warnings' format '%BSorry, no matches for: %d%b' # Don't know I like this
+zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 
 # Tab completion for ../
 zstyle -e ':completion:*' special-dirs '[[ $PREFIX = (../)#(|.|..) ]] && reply=(..)'
