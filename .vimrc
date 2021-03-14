@@ -21,7 +21,6 @@ Plugin 'vimwiki/vimwiki'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'joonty/vdebug'
 Plugin 'editorconfig/editorconfig-vim'
-Plugin 'vexxor/phpdoc.vim'
 
 " You also have to install prettier globaly with 'npm install -g prettier' or
 " 'yarn global add prettier'.
