@@ -1,0 +1,30 @@
+{
+    "com.github.doekeb.ulauncher-gnome-calculator": {
+        "id": "com.github.doekeb.ulauncher-gnome-calculator",
+        "url": "https://github.com/Doekeb/ulauncher-gnome-calculator",
+        "updated_at": "2021-03-14T13:41:30.221965",
+        "last_commit": "365e40e17cc8bbc75dfa28cb7cdd023e46bebd8b",
+        "last_commit_time": "2020-12-12T18:58:36"
+    },
+    "com.github.epholys.ultz": {
+        "id": "com.github.epholys.ultz",
+        "url": "https://github.com/Epholys/ultz",
+        "updated_at": "2021-03-14T13:42:31.138574",
+        "last_commit": "5bc1024475719d8b0df76fe2ceb09ea6f1b06bb4",
+        "last_commit_time": "2021-01-30T17:16:19"
+    },
+    "com.github.kbialek.ulauncher-bitwarden": {
+        "id": "com.github.kbialek.ulauncher-bitwarden",
+        "url": "https://github.com/kbialek/ulauncher-bitwarden",
+        "updated_at": "2021-03-14T13:44:54.011915",
+        "last_commit": "aaa8f4331b4dad350f1fe4e76e64b3e9d73074d5",
+        "last_commit_time": "2020-11-14T17:09:56"
+    },
+    "com.github.skykooler.ulauncher-conversion": {
+        "id": "com.github.skykooler.ulauncher-conversion",
+        "url": "https://github.com/skykooler/ulauncher-conversion",
+        "updated_at": "2021-03-14T15:33:27.527018",
+        "last_commit": "e0c707cbdaff04de8d7aecf002535176ad562c4e",
+        "last_commit_time": "2019-07-09T14:41:19"
+    }
+}
